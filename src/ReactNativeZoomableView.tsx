@@ -599,6 +599,8 @@ class ReactNativeZoomableView extends Component<
 
     const gestureCenterPoint = calcGestureCenterPoint(e, gestureState);
 
+    if (!gestureCenterPoint) return;
+
     const zoomCenter = {
       x: gestureCenterPoint.x - this.state.originalPageX,
       y: gestureCenterPoint.y - this.state.originalPageY,
