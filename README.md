@@ -69,7 +69,7 @@ Just use it as a drop in component instead of a normal view.
 Import ReactNativeZoomableView:
 
 ```JSX
-import ReactNativeZoomableView from '@openspacelabs/react-native-zoomable-view/src/ReactNativeZoomableView';
+import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
 ```
 
 Use the component:
