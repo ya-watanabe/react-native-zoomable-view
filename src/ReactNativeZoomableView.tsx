@@ -1010,7 +1010,7 @@ class ReactNativeZoomableView extends Component<
   render() {
     return (
       <View
-        style={styles.container}
+        style={[styles.container, this.props.containerStyle]}
         {...this.gestureHandlers.panHandlers}
         ref={this.zoomSubjectWrapperRef}
         onLayout={this.grabZoomSubjectOriginalMeasurements}
@@ -1063,7 +1063,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
-    overflow: 'visible',
+    overflow: 'hidden',
   },
 });
 
